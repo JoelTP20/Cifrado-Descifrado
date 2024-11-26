@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Encrypt & Decrypt</title>
+  <!-- Cargar jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Cargar SJCL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.8/sjcl.js"></script>
+</head>
+<body>
+  <form name="myform">
+    Password: <input type="password" name="password" id="password"><br>
+    Stuff:<br>
+    <textarea name="stuff" id="stuff" placeholder="Enter message here."></textarea><br>
+    <input type="button" name="encrypt" value="Encrypt">
+
+    <br><br>
+    Encrypted Stuff:<br>
+    <textarea id="encrypted"></textarea>
+
+    <br>
+    <input type="button" name="decrypt" value="Decrypt">
+    <br><br>
+    Decrypted Stuff:<br>
+    <textarea id="decrypted"></textarea>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
